@@ -9,4 +9,16 @@ jobs:
     steps:
       - name: echo cmd testing
         run: echo " it is working"
+  
+  job2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: building
+        run: |
+          x=2
+          y=2
+          print(f"x + y =")
+        shell: python          
+                 
         
