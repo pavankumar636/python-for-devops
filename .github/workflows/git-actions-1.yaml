@@ -1,1 +1,12 @@
 name: this is the first git-hub actions
+
+on: [push]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: echo cmd testing
+        run: echo " it is working"
+        
