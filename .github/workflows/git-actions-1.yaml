@@ -18,7 +18,8 @@ jobs:
         run: |
           x=2
           y=2
-          print(f"x + y =")
+          r=x+y
+          print(f"x + y = r ")
         shell: python          
                  
         
