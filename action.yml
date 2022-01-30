@@ -1,0 +1,13 @@
+# name: 'Hello First Actions '
+# description: 'Actions testing'
+# inputs:
+#   name-input:  # id of input
+#     description: 'name-input'
+#     required: true
+#     default: 'World'
+# outputs:
+#   time: # id of output
+#     description: 'The time inputted name'
+# runs:
+#   using: 'node12'
+#   main: 'index.js'

@@ -38,9 +38,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Testing "with" & Outputs From actions
-        id: name #ID for referencing in next steps.
-        uses: ./action.yml
+        id: greet #ID for referencing in next steps.
+        uses: actions/hello-world-javascript-action@v1
         with: 
-          name-input: Testing Actions
+          who-to-greet: Testing Actions
       - name: Outputting info from actions file key.
-        run: echo "${{steps.name.outputs.time}}"
+        run: |
+          echo "${{steps.name.outputs.time}}"
+          pwd
+          ls
