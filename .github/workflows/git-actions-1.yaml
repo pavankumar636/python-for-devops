@@ -34,3 +34,13 @@ jobs:
         #  step.
           
         
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing "with" & Outputs From actions
+        id: name #ID for referencing in next steps.
+        uses: ./action.yml
+        with: 
+          name-input: Testing Actions
+      - name: Outputting info from actions file key.
+        run: echo "${{steps.name.outputs.time}}"
