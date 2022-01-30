@@ -11,16 +11,26 @@ jobs:
         run: echo " it is working"
   
   job2:
+    #job2 will run on a different instance, as we have
+    # separated, similar to master slave in jenkins.
     runs-on: ubuntu-latest
     needs: [job1]
+    # "Needs" is used to make sure the first job 
+    # is completed and then run the next job.
 
     steps:
       - name: building
         run: |
           x=2
           y=2
+          l=33
           r=x+y
           print(f" {x} + {y} = {r} ")
-        shell: python          
-                 
+        shell: python 
+        
+        #  to run it with any partiuclar shell,
+        #  in this example we r running it with python 
+        # instead of default shell in this particular
+        #  step.
+          
         

@@ -19,7 +19,7 @@ else:
 
 print ( " /c/Users/cjayapav/OneDrive - Capgemini/Desktop/coding \a")
 
-'''
+
 
 #VARIABLES
 
@@ -29,3 +29,13 @@ y= 13
 z= x+y
 
 print(z)
+
+
+
+#Data-Types
+
+numbers: int,float
+strings: "    "
+boolean: True, False
+
+'''
