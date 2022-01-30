@@ -37,7 +37,7 @@ jobs:
   job3:
     runs-on: ubuntu-latest
     steps:
-      - name: Testing "with" & Outputs From actions
+      - name: Testing "with" & "Outputs" From actions
         id: name #ID for referencing in next steps.
         uses: ./action.yml
         with: 
