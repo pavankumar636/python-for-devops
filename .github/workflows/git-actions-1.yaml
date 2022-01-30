@@ -23,7 +23,7 @@ jobs:
         run: |
           x=2
           y=2
-          l=33
+          l=339
           r=x+y
           print(f" {x} + {y} = {r} ")
         shell: python 
