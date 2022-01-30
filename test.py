@@ -1,9 +1,10 @@
+'''
 print  (" hello this is the first commit")
 print ( 124 + 78)
 
-'''
+
 Simple IF block
-'''
+
 a = 30
 b = 5
 result = a + b
@@ -18,3 +19,13 @@ else:
 
 print ( " /c/Users/cjayapav/OneDrive - Capgemini/Desktop/coding \a")
 
+'''
+
+#VARIABLES
+
+x= 12
+y= 13
+
+z= x+y
+
+print(z)
