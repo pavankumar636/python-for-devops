@@ -37,15 +37,10 @@ jobs:
   job3:
     runs-on: ubuntu-latest
     steps:
-<<<<<<< HEAD
       - name: Testing "with" & Outputs From actions
         id: greet #ID for referencing in next steps.
         uses: actions/hello-world-javascript-action@v1
-=======
-      - name: Testing "with" & "Outputs" From actions
-        id: name #ID for referencing in next steps.
-        uses: ./action.yml
->>>>>>> 35ee533240421064a03e7d025c7b3100c3febe0b
+
         with: 
           who-to-greet: Testing Actions
       - name: Outputting info from actions file key.
