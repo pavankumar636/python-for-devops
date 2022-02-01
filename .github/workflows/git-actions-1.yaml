@@ -37,26 +37,15 @@ jobs:
   job3:
     runs-on: ubuntu-latest
     steps:
-<<<<<<< HEAD
       - name: git checkout
         uses: actions/checkout@v1
       - name: Testing "with" & Outputs From actions
         id: greet #ID for referencing in next steps.
         uses: actions/hello-world-javascript-action@v1
-=======
-      - name: Testing "with" & Outputs From actions
-        id: greet #ID for referencing in next steps.
-        uses: actions/hello-world-javascript-action@v1
-
->>>>>>> bde5805c7442cbdc0b8b4f060fc948dcf9759308
         with: 
           who-to-greet: Testing Actions
       - name: Outputting info from actions file key.
         run: |
           echo "${{steps.name.outputs.time}}"
           pwd
-<<<<<<< HEAD
           ls -a 
-=======
-          ls
->>>>>>> bde5805c7442cbdc0b8b4f060fc948dcf9759308
