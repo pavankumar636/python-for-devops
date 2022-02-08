@@ -49,3 +49,14 @@ jobs:
           echo "${{steps.name.outputs.time}}"
           pwd
           ls -a 
+          
+
+  job4:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: ENV CMDS
+        run: |
+          echo $GITHUB_WORKSPACE
+
+
+    
