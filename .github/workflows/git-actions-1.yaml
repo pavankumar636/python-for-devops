@@ -56,7 +56,9 @@ jobs:
     steps: 
       - name: ENV CMDS
         run: |
-          echo $GITHUB_WORKSPACE
+          node -v
+          python -v
+          java -v 
 
 
     
