@@ -1,0 +1,16 @@
+name: Dev branch 
+
+on: 
+  pull:
+    branches:
+      - dev 
+
+jobs: 
+  job1.1:
+    runs-on: ubuntu-latest
+
+    steps:
+      name: CMDS
+        run: |
+          echo $GITHUB_WORKSPACE
+      
