@@ -57,7 +57,7 @@ jobs:
       - name: ENV CMDS
         run: |
           node -v
-          python -version
+          mvn -v
           java -version
 
 
